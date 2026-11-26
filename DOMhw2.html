@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Operations</title>
+</head>
+<body>
+
+    <h2>CSS Operations Menu</h2>
+
+    <h3 id="text">Welcome to JavaScript DOM</h3>
+
+    <button onclick="changeColor()">1. Change Color</button>
+    <button onclick="increaseSize()">2. Increase Font Size</button>
+    <button onclick="hideElement()">3. Hide Element</button>
+    <button onclick="exitProgram()">4. Exit</button>
+
+    <script>
+
+        function changeColor() {
+            document.getElementById("text").style.color = "red";
+        }
+
+        function increaseSize() {
+            document.getElementById("text").style.fontSize = "40px";
+        }
+
+        function hideElement() {
+            document.getElementById("text").style.display = "none";
+        }
+
+        function exitProgram() {
+            document.body.innerHTML = "Program Exited!";
+        }
+
+    </script>
+
+</body>
+</html>
